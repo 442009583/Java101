@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 //عبدالله محمد الربيعاني
 //442009583
+// your grade is 4.5/5
 
+//@ change the class name from Main to Assignment ( Golden rule Class name should match the file name )
 public class Main
 {
 	public static void main(String[] args) {
