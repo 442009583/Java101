@@ -4,8 +4,8 @@ import java.util.Scanner;
 //442009583
 // your grade is 4.5/5
 
-//@ change the class name from Main to Assignment ( Golden rule Class name should match the file name )
-public class Main
+//@ change the class name from Main to Assignment ( Golden rule Class name should match the file name ) (O)
+public class Assignment1
 {
 	public static void main(String[] args) {
 		System.out.println("Enter 2 floats: ");
