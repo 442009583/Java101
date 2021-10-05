@@ -21,7 +21,7 @@ public class Assignment1
 		System.out.println(F1%F2);
 		System.out.println(F1>F2);
 		//@ is always true because it is equal to itself
-		System.out.println(F1>=F1);
+		System.out.println(F1>=F2);
 		System.out.println(F1<F2);
 		System.out.println(F1<=F2);
 		System.out.println(F1!=F2);
