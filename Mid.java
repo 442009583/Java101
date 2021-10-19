@@ -18,7 +18,7 @@ public class Mid
 	    if (Dob < 1990)
 	        System.out.println("Hi "+Name+" in "+Dob+" you should have played Pac-man");
 	    
-	    else if (Dob > 1990 && Dob <2000)
+	    else if (Dob >= 1990 && Dob <=2000)
 	        System.out.println("Hi "+Name+" in "+Dob+" you should have played Super Mario or Kick off 2");
 	    
 	    else
