@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-
+// your grade is 5/5
 public class Assignment2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
