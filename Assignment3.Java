@@ -4,16 +4,14 @@ import java.util.Scanner;
 [2]:Jodi
 [3]:Bernete
 [4]:Faith
-
 [2]:Jodi has 5 of 100 in the course math
 [4]:Faith has 70 of 100 in the course math
 [3]:Bernete has 49 of 100 in the course math
 The student [Jodi] percentage is 15.00%
 [4]:Faith has the highest 70 grade in math
 [2]:Jodi has the lowest 5 grade in math
-
 */
-public class Assignment3 {
+public class Main {
     /**
      * This function will help you to cast string into int
      */
@@ -53,32 +51,36 @@ public class Assignment3 {
             }
         }
     }
-    static void Max(String course, String[] courses, int[] grades) {
+    static void Max(String course, String[] studentsName, String[] courses, int[] grades) {
         //start the loop from 0 to ids length
         int maxg = 0;
+        String stname = "ab";
         for (int index = 0; index < grades.length; ++index) {
             //if the courses at index equals to the course then print his course and grade
             if (courses[index].equals(course)) {
                 if (grades[index] > maxg){
                     maxg = grades[index];
+                    stname = studentsName[index];
                 }
             }
         }
-        System.out.format("Max grade in %s is %d\n", course, maxg);
+        System.out.format("%s has the highest %d grade in %s\n", stname, maxg, course);
     }
-        static void Min(String course, String[] courses, int[] grades) {
+    static void Min(String course,String[] studentsName, String[] courses, int[] grades) {
         //start the loop from 0 to ids length
         int ming = 100;
+        String stname = "ab";
         for (int index = 0; index < grades.length; ++index) {
             //if the courses at index equals to the course then print his course and grade
             if (courses[index].equals(course)) {
-                if (grades[index] > ming){
+                if (grades[index] < ming){
                     ming = grades[index];
+                    stname = studentsName[index];
                 }
             }
         }
         
-        System.out.format("Min grade in %s is %d\n", course, ming);
+        System.out.format("%s has the lowest %d grade in %s\n", stname, ming, course);
     }
 
 
@@ -183,8 +185,8 @@ public class Assignment3 {
         calculatePercentage("Jodi", ids, studentName, course, grade);
         
         //@todo calculate max grade in a course such as math
-    Max("math", course, grade);
+    Max("math", studentName, course, grade);
         //@todo calculate min grade in a course such as 
-    Min("art", course, grade);
+    Min("math", studentName, course, grade);
 }
 }
